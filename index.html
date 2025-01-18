@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,8 +16,8 @@
         </a>
         <div class="space-x-4">
           <a href="#">Home</a>
-          <a href="#">Habilities</a>
-          <a href="#">Projects</a>
+          <a href="#habilities">Habilities</a>
+          <a href="#projects">Projects</a>
         </div>
       </nav>
 
@@ -45,7 +45,7 @@
       </section>
     </header>
     <main>
-      <section class="wrapper py-20 text-center">
+      <section class="wrapper py-20 text-center" id="habilities">
         <h2 class="text-3xl font-bold">My Habilities</h2>
         <div class="mt-12 grid gap-8 max-w-md mx-auto">
           <article class="space-y-6">
@@ -122,7 +122,7 @@
           </article>
         </div>
       </section>
-      <section class="bg-slate-50 py-20">
+      <section class=" bg-[#cfdee7] py-20" id="projects">
         <div class="wrapper text-center">
           <h2 class="text-3xl font-bold m-6">My Work</h2>
           <p class="font-light text-xl text-slate-500"></p>
@@ -193,10 +193,36 @@
           <input
             type="submit"
             value="Contact me!"
-            class="bg-orange-500 py-4 px-10 rounded-lg"
+            class="bg-[#02182b] text-white py-4 px-10 rounded-lg"
           />
         </form>
       </section>
+      <footer class="bg-blue-200">
+        <div class="wrapper py-20">
+          <section class="flex flex-col text-center gap-6 border-b-2 border-slate-400 pb-8">
+            <h2 class="text-3xl text-slate-900 font-extrabold">Landing with Tailwind</h2>
+            <p class="text-slate-600 ">vjpb881104@mail.com</p>
+          </section>
+          <section class="flex flex-col text-center gap-6 pt-8">
+            <div class="flex justify-center gap-4 text-slate-900">
+              <a href="#">Home</a>
+              <a href="habilities">Habilities</a>
+              <a href="projects">Projects</a>
+            </div>
+            <div class="grid grid-flow-col auto-cols-max gap-8 justify-center">
+              <a href="#">
+                <img src="./assets/in.svg" class="w-8" alt="LinkedIn">
+              </a>
+              <a href="#">
+                <img src="./assets/ws.svg" class="w-8" alt="Whatsapp">
+              </a>
+              <a href="#">
+                <img src="./assets/gh.svg" class="w-8" alt="GitHub">
+              </a>
+            </div>
+          </section>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="bg-red-400 min-h-[600px]">
+    <header class="bg-red-400">
       <nav
-        class="py-6 text-white grid justify-items-center items-center gap-6 wrapper"
+        class="py-6 text-white grid justify-items-center items-center gap-6 wrapper md:grid-flow-col md:justify-between"
       >
         <a href="#">
           <h2 class="text-3xl font-extrabold">Landing with Tailwind</h2>
@@ -20,11 +20,18 @@
           <a href="#projects">Projects</a>
         </div>
       </nav>
-
-      <section class="wrapper py-14 flex flex-col items-center gap-12">
-        <img src="./assets/hero.svg" class="max-w-lg w-full" alt="hero-image" />
-        <div class="text-white space-y-6 text-center max-w-[890px]">
-          <h1 class="text-3xl font-bold">
+      <section
+        class="wrapper py-14 flex flex-col items-center gap-12 md:flex-row min-h-[600px]"
+      >
+        <img
+          src="./assets/code-hero-2.jpg"
+          class="max-w-lg w-full rounded-full md:w-2/5"
+          alt="hero-image"
+        />
+        <div
+          class="text-white space-y-6 text-center max-w-[890px] md:w-3/5 md:text-left"
+        >
+          <h1 class="text-3xl font-bold md:text-4xl">
             My name is Victor Pedroza, and it would be a pleasure to assist you
             and be part of your team.
           </h1>
@@ -38,7 +45,7 @@
             expertise, I’m highly organized and value clear communication, which
             helps me deliver efficient and impactful web solutions.
           </p>
-          <a href="#" class="inline-block bg-slate-700 py-4 px-8 rounded-xl"
+          <a href="#" class="inline-block bg-[#02182b] py-4 px-8 rounded-xl"
             >Contactame ahora!</a
           >
         </div>
@@ -46,8 +53,10 @@
     </header>
     <main>
       <section class="wrapper py-20 text-center" id="habilities">
-        <h2 class="text-3xl font-bold">My Habilities</h2>
-        <div class="mt-12 grid gap-8 max-w-md mx-auto">
+        <h2 class="text-3xl font-bold md:text-4xl">My Habilities</h2>
+        <div
+          class="mt-12 grid gap-8 max-w-md mx-auto md:grid-flow-col md:max-w-none auto-cols-fr"
+        >
           <article class="space-y-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -122,11 +131,16 @@
           </article>
         </div>
       </section>
-      <section class=" bg-[#cfdee7] py-20" id="projects">
+      <section class="bg-[#cfdee7] py-20" id="projects">
         <div class="wrapper text-center">
-          <h2 class="text-3xl font-bold m-6">My Work</h2>
-          <p class="font-light text-xl text-slate-500"></p>
-          <div class="mt-12 grid gap-12">
+          <h2 class="text-3xl font-bold m-6 md:text-4xl">My Work</h2>
+          <p class="font-light text-xl text-slate-500 w-2/3 mx-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sint
+            aspernatur debitis deserunt optio incidunt consequatur aliquid.
+            Autem, deserunt odit perspiciatis eaque, expedita pariatur ducimus
+            excepturi animi tempora nostrum molestias.
+          </p>
+          <div class="mt-12 grid gap-12 md:grid-flow-col auto-cols-fr">
             <article class="w-4/5 mx-auto space-y-4">
               <img
                 src="./assets/img1.jpg"
@@ -172,7 +186,7 @@
           </div>
         </div>
       </section>
-      <section class="wrapper py-20 grid gap-12">
+      <section class="wrapper py-20 grid gap-12 auto-cols-fr items-center md:grid-flow-col">
         <div>
           <h2 class="text-3xl font-bold">
             Send me a DM and I'll contact you ASAP
@@ -199,11 +213,15 @@
       </section>
       <footer class="bg-blue-200">
         <div class="wrapper py-20">
-          <section class="flex flex-col text-center gap-6 border-b-2 border-slate-400 pb-8">
-            <h2 class="text-3xl text-slate-900 font-extrabold">Landing with Tailwind</h2>
-            <p class="text-slate-600 ">vjpb881104@mail.com</p>
+          <section
+            class="flex flex-col text-center gap-6 border-b-2 border-slate-400 pb-8 md:flex-row md:justify-between md:items-center md:pt-10"
+          >
+            <h2 class="text-3xl text-slate-900 font-extrabold">
+              Landing with Tailwind
+            </h2>
+            <p class="text-slate-600">vjpb881104@mail.com</p>
           </section>
-          <section class="flex flex-col text-center gap-6 pt-8">
+          <section class="flex flex-col text-center gap-6 pt-8 md:justify-between md:items-center md:flex-row md:pb-10">
             <div class="flex justify-center gap-4 text-slate-900">
               <a href="#">Home</a>
               <a href="habilities">Habilities</a>
@@ -211,13 +229,13 @@
             </div>
             <div class="grid grid-flow-col auto-cols-max gap-8 justify-center">
               <a href="#">
-                <img src="./assets/in.svg" class="w-8" alt="LinkedIn">
+                <img src="./assets/in.svg" class="w-8" alt="LinkedIn" />
               </a>
               <a href="#">
-                <img src="./assets/ws.svg" class="w-8" alt="Whatsapp">
+                <img src="./assets/ws.svg" class="w-8" alt="Whatsapp" />
               </a>
               <a href="#">
-                <img src="./assets/gh.svg" class="w-8" alt="GitHub">
+                <img src="./assets/gh.svg" class="w-8" alt="GitHub" />
               </a>
             </div>
           </section>
